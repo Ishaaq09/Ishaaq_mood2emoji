@@ -1,0 +1,6 @@
+streamlit
+textblob
+better-profanity
+matplotlib
+nltk
+pillow
