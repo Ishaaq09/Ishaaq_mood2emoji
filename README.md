@@ -9,6 +9,8 @@ Kids type how they feel → the app responds with a mood emoji!
 2. Educational  
 3. Safe (Profanity Filter Included)
 
+**Live App**: https://ishaaqmood2emoji-u3kvdxtcwhpzjatyiwsfxk.streamlit.app/
+
 ## Purpose of the Project
 
 This project introduces young learners to **Natural Language Processing (NLP)** through a playful activity.
