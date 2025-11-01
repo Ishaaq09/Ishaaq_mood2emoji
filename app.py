@@ -6,73 +6,39 @@ import matplotlib.pyplot as plt
 st.markdown(
     """
     <style>
+.stApp {
+    background-color: #1A2A4F !important;
+    color: #ffffff !important;
+}
 
-    .stApp {
-        background-color: #1A2A4F !important;
-        color: #ffffff !important;
-    }
+html, body, [class*="css"] {
+    color: #ffffff !important;
+}
 
-    html, body, [class*="css"] {
-        color: #ffffff !important;
-    }
+hr {
+    border: 1px solid white !important;
+}
 
-    hr {
-        border: 1px solid white !important;
-    }
+/* Hide header/footer */
+header[data-testid="stHeader"] { display: none; }
+footer { display: none; }
 
-    /* Hide header/footer */
-    header[data-testid="stHeader"] { display: none; }
-    footer { display: none; }
+/* Input field styling */
+div[data-testid="stTextArea"] textarea,
+textarea[role="textbox"] {
+    color: #ffffff;
+}
 
-    div[data-testid="stTextInput"] input,
-    div[data-testid="stTextArea"] textarea,
-    input[role="textbox"],
-    textarea[role="textbox"] {
-        color: #ffffff !important;
-        background-color: rgba(255,255,255,0.05) !important;
-        border: 1px solid rgba(255,255,255,0.20) !important;
-        -webkit-text-fill-color: #ffffff !important;
-        caret-color: #ffffff !important;
-    }
+/* Checkbox styling */
+div[data-testid="stCheckbox"] * {
+    color: #ffffff;
+}
 
-    /* Placeholder styling */
-    div[data-testid="stTextInput"] input::placeholder,
-    div[data-testid="stTextArea"] textarea::placeholder,
-    input[role="textbox"]::placeholder,
-    textarea[role="textbox"]::placeholder {
-        color: #d3d3d3 !important;
-        opacity: 1 !important;
-    }
-
-    div[data-testid="stCheckbox"],
-    div[data-testid="stCheckbox"] * {
-        color: #ffffff !important;
-        fill: #ffffff !important;
-        -webkit-text-fill-color: #ffffff !important;
-    }
-
-    input[type="checkbox"] {
-        accent-color: #ffffff !important;
-    }
-    
-   
-    /* Placeholder color */
-    div[data-testid="stTextInput"] input::placeholder,
-    div[data-testid="stTextArea"] textarea::placeholder,
-    .stTextInput>div>div>input::placeholder,
-    .stTextArea>div>div>textarea::placeholder,
-    input[role="textbox"]::placeholder,
-    textarea[role="textbox"]::placeholder {
-        color: #d3d3d3 !important;
-        opacity: 1 !important;
-    }
-
-    /* Make sure the label and caption remain readable on dark bg */
-    label, .css-1aumxhk, .stTextInput label {
-        color: #ffffff !important;
-    }
-
-    </style>
+/* Label styling */
+label, .css-1aumxhk, .stTextInput label {
+    color: #ffffff !important;
+}
+</style>
 """, unsafe_allow_html=True
 )
 
